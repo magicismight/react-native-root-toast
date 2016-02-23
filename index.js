@@ -1,5 +1,5 @@
 import Toast from './lib/Toast';
-
+export * from './lib/Toast';
 export default Toast;
 
 // Toast.show(message, duration, {position, hidesOnTap, shadow});
