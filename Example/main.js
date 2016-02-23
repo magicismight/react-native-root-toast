@@ -141,19 +141,17 @@ class ReactNativeRootToast extends Component {
                     <Text style={styles.title}>duration</Text>
                 </View>
                 <Field
-                    name="durations"
+                    name="duration"
                     options={durations}
                     onChange={duration => this.setState({duration})}
-                    unit="ms"
                 />
                 <View style={styles.prop}>
                     <Text style={styles.title}>position</Text>
                 </View>
                 <Field
-                    name="positions"
+                    name="position"
                     options={positions}
                     onChange={position => this.setState({position})}
-                    unit=""
                 />
                 <View style={styles.fieldContainer}>
                     <Text style={styles.fieldText}>delay (ms)</Text>

@@ -42,7 +42,8 @@ const styles = StyleSheet.create({
         width: 200,
         borderBottomWidth: 1,
         borderBottomColor: '#ccc',
-        height: 30
+        height: 30,
+        justifyContent: 'center'
     },
     input: {
         width: 200,
@@ -63,7 +64,7 @@ class Field extends Component{
         let keys = this.keys = Object.keys(this.props.options);
         this.state = {
             value: this.props.options[keys[0]],
-            text: `Toast.${this.props.name}.${keys[0]}`,
+            text: `Toast.${this.props.name}s.${keys[0]}`,
             picked: keys[0],
             picker: false
         };
@@ -86,15 +87,14 @@ class Field extends Component{
         this.setState({
             value: to,
             picked: value,
-            text: value ? `Toast.${this.props.name}.${value}` : `${this.state.value} ${this.props.unit}`
+            text: value ? `Toast.${this.props.name}s.${value}` : `Custom ${this.props.name}`
         });
         this.props.onChange(to);
     };
 
     inputChange = ({nativeEvent: {text}}) => {
         this.setState({
-            value: text,
-            text: (text || 0) + ' ' + this.props.unit
+            value: text
         });
         this.props.onChange(+text);
     };
@@ -128,11 +128,11 @@ class Field extends Component{
                 >
                     {this.keys.map(key => <Picker.Item
                         key={key}
-                        label={`Toast.${this.props.name}.${key}`}
+                        label={`Toast.${this.props.name}s.${key}`}
                         value={key}
                     />)}
                     <Picker.Item
-                        label={`CUSTOM`}
+                        label={`Custom ${this.props.name}`}
                         value={false}
                     />
                 </Picker>
