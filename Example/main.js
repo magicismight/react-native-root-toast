@@ -58,7 +58,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#F5FCFF'
     },
     content: {
-        flex: 1,
         paddingTop: 40,
         alignItems: 'center'
     },
@@ -66,7 +65,12 @@ const styles = StyleSheet.create({
         borderRadius: 3,
         paddingVertical: 5,
         paddingHorizontal: 10,
-        backgroundColor: 'green'
+        backgroundColor: 'green',
+        marginBottom: 10
+    },
+    buttonText: {
+        color: '#fff',
+        textAlign: 'center'
     },
     prop: {
         alignItems: 'center',
@@ -96,6 +100,32 @@ const styles = StyleSheet.create({
         lineHeight: 30,
         fontWeight: 'bold',
         color: '#333'
+    },
+    code: {
+        alignSelf: 'stretch',
+        backgroundColor: '#f0f0f0',
+        padding: 10,
+        height: 200
+    },
+    codeText: {
+        fontSize: 10
+    },
+    codeTittle: {
+        textAlign: 'center',
+        fontSize: 16,
+        fontWeight: 'bold',
+        marginBottom: 10
+    },
+    value: {
+        color: 'blue'
+    },
+    string: {
+        color: 'grey'
+    },
+    api: {
+        fontSize: 12,
+        textAlign: 'center',
+        marginRight: 10
     }
 });
 
@@ -108,15 +138,20 @@ class ReactNativeRootToast extends Component {
             shadow: true,
             animation: true,
             hideOnPress: true,
-            delay: 0
+            delay: 0,
+            message: messages[~~(messages.length * Math.random())]
         };
     }
 
     toast = null;
 
     show = () => {
+        let message = messages[~~(messages.length * Math.random())];
         this.toast && this.toast.destroy();
-        this.toast = Toast.show(messages[~~(messages.length * Math.random())], {
+        this.setState({
+            message
+        });
+        this.toast = Toast.show(message, {
             duration: this.state.duration,
             position: this.state.position,
             shadow: this.state.shadow,
@@ -130,12 +165,26 @@ class ReactNativeRootToast extends Component {
         });
     };
 
+    getApiCode = () => <Text>
+        {`Toast.show(
+    `}<Text style={styles.string}>'{this.state.message}'</Text>{`,
+    {
+        duration:`} <Text style={styles.value}>{this.state.duration}</Text>{`,
+        position:`} <Text style={styles.value}>{this.state.position}</Text>{`,
+        shadow:`} <Text style={styles.value}>{this.state.shadow.toString()}</Text>{`,
+        animation:`} <Text style={styles.value}>{this.state.animation.toString()}</Text>{`,
+        hideOnPress:`} <Text style={styles.value}>{this.state.hideOnPress.toString()}</Text>{`,
+        delay:`} <Text style={styles.value}>{this.state.delay}</Text>{`
+    }
+);`}
+    </Text>;
+
     render() {
+        let code = this.getApiCode();
         return (
             <ScrollView
                 style={styles.container}
                 contentContainerStyle={styles.content}
-                scrollEnabled={false}
             >
                 <View style={styles.prop}>
                     <Text style={styles.title}>duration</Text>
@@ -190,6 +239,10 @@ class ReactNativeRootToast extends Component {
                 >
                     <Text style={styles.buttonText}>Show Toast</Text>
                 </TouchableHighlight>
+                <View style={styles.code}>
+                    <Text style={styles.codeTittle}>CODE:</Text>
+                    <Text style={styles.codeText}>{code}</Text>
+                </View>
             </ScrollView>
         );
     }
