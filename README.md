@@ -44,6 +44,7 @@ presets of duration of the toast.
 ##### Toast.positions
 
 presets of position of toast.
+
 1. Toast.positions.TOP (equals to *20*)
 
 2. Toast.positions.BOTTOM (equals to *-20*)
