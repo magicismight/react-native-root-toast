@@ -34,14 +34,20 @@ onHidden            | null                     | Function | Callback for toast\`
 ### Properties
 
 ##### Toast.durations
+
 presets of duration of the toast.
+
 1. Toast.durations.SHORT (equals to *2000*)
+
 2. Toast.durations.LONG (equals to *3500*)
 
 ##### Toast.positions
+
 presets of position of toast.
 1. Toast.positions.TOP (equals to *20*)
+
 2. Toast.positions.BOTTOM (equals to *-20*)
+
 3. Toast.positions.CENTER (equals to *0*)
 
 ### Usage
