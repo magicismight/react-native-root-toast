@@ -93,7 +93,7 @@ setTimeout(function () {
 ##### **Using a Component**
 
 **NOTE:**
-Showing a toast by using a Component inside render. The toast will be automatically disappeared when the <Toast /> is unmounted.
+Showing a toast by using a Component inside render, The toast will be automatically disappeared when the `<Toast />` is unmounted.
 
 ```
 import React, {Component} from 'react-native';
