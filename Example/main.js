@@ -248,4 +248,35 @@ class ReactNativeRootToast extends Component {
     }
 }
 
+// You can also show a toast by using a <Toast /> inside render
+class Example extends Component{
+    constructor() {
+        super(...arguments);
+        this.state = {
+            visible: false
+        };
+    }
+
+    componentDidMount() {
+        setTimeout(() => this.setState({
+            visible: true
+        }), 2000); // show toast after 2s
+
+        setTimeout(() => this.setState({
+            visible: false
+        }), 5000); // hide toast after 5s
+    };
+
+    render() {
+        return <Toast
+            visible={this.state.visible}
+            position={50}
+            shadow={false}
+            animation={false}
+            hideOnPress={true}
+        >This is a message</Toast>;
+    }
+}
+
+
 AppRegistry.registerComponent('ReactNativeRootToast', () => ReactNativeRootToast);
