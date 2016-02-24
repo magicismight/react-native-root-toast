@@ -8,6 +8,8 @@
 3. Lots of custom options for Toast.
 4. You can show/hide Toast by calling api or using Component inside render.
 
+![screen-shoots](./Example/screen-shoots.gif)
+
 ### Install
 
 `npm install react-native-root-toast`
@@ -30,6 +32,17 @@ onHidden            | null                     | Function | Callback for toast\`
 
 
 ### Properties
+
+##### Toast.durations
+presets of duration of the toast.
+1. Toast.durations.SHORT (equals to *2000*)
+2. Toast.durations.LONG (equals to *3500*)
+
+##### Toast.positions
+presets of position of toast.
+1. Toast.positions.TOP (equals to *20*)
+2. Toast.positions.BOTTOM (equals to *-20*)
+3. Toast.positions.CENTER (equals to *0*)
 
 ### Usage
 
@@ -105,4 +118,11 @@ class Example extends Component{
     }
 }
 
+```
+
+### Run example:
+
+```
+cd ./Example
+npm install
 ```
