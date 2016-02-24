@@ -35,7 +35,7 @@ onHidden            | null                     | Function | Callback for toast\`
 
 There are two different ways to manage a Toast.
 
-1. **Calling api**
+##### **Calling api**
 
 ```
 import Toast from 'react-native-root-toast';
@@ -70,7 +70,7 @@ setTimeout(function () {
 
 ```
 
-2. **Using a Component**
+##### **Using a Component**
 
 ```
 import React, {Component} from 'react-native';
