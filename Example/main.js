@@ -155,6 +155,7 @@ class ReactNativeRootToast extends Component {
             duration: this.state.duration,
             position: this.state.position,
             shadow: this.state.shadow,
+            backgroundColor: 'blue',
             animation: this.state.animation,
             hideOnPress: this.state.hideOnPress,
             delay: this.state.delay,
