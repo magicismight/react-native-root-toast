@@ -26,7 +26,6 @@ let {
 
 const DURATIONS_KEYS = Object.keys(durations);
 const POSITIONS_KEYS = Object.keys(positions);
-
 const messages = [
     'Mr. and Mrs. Dursley, of number four Privet Drive, were proud to say that they were perfectly normal, thank you very much.',
     '“I am not worried, Harry,” said Dumbledore, his voice a little stronger despite the freezing water. “I am with you.”',
@@ -51,6 +50,11 @@ const messages = [
     'Oculus Reparo!',
     '“After all this time?”“Always,” said Snape.'
 ];
+const colors = {
+    default: null,
+    red: 'red',
+    blue: 'blue'
+};
 
 const styles = StyleSheet.create({
     container: {
@@ -139,7 +143,10 @@ class ReactNativeRootToast extends Component {
             animation: true,
             hideOnPress: true,
             delay: 0,
-            message: messages[~~(messages.length * Math.random())]
+            message: messages[~~(messages.length * Math.random())],
+            backgroundColor: false,
+            shadowColor: false,
+            textColor: false
         };
     }
 
@@ -155,10 +162,12 @@ class ReactNativeRootToast extends Component {
             duration: this.state.duration,
             position: this.state.position,
             shadow: this.state.shadow,
-            backgroundColor: 'blue',
             animation: this.state.animation,
             hideOnPress: this.state.hideOnPress,
             delay: this.state.delay,
+            backgroundColor: this.state.backgroundColor ? 'blue' : null,
+            shadowColor: this.state.shadowColor ? 'yellow' : null,
+            textColor: this.state.textColor ? 'purple' : null,
             onHidden: () => {
                 this.toast.destroy();
                 this.toast = null;
@@ -170,15 +179,28 @@ class ReactNativeRootToast extends Component {
         {`Toast.show(
     `}<Text style={styles.string}>'{this.state.message}'</Text>{`,
     {
-        duration:`} <Text style={styles.value}>{this.state.duration}</Text>{`,
         position:`} <Text style={styles.value}>{this.state.position}</Text>{`,
+        delay:`} <Text style={styles.value}>{this.state.delay}</Text>{`,
         shadow:`} <Text style={styles.value}>{this.state.shadow.toString()}</Text>{`,
         animation:`} <Text style={styles.value}>{this.state.animation.toString()}</Text>{`,
         hideOnPress:`} <Text style={styles.value}>{this.state.hideOnPress.toString()}</Text>{`,
-        delay:`} <Text style={styles.value}>{this.state.delay}</Text>{`
+        backgroundColor:`} <Text style={styles.value}>{this.state.backgroundColor.toString()}</Text>{`,
+        shadowColor:`} <Text style={styles.value}>{this.state.shadowColor.toString()}</Text>{`,
+        textColor:`} <Text style={styles.value}>{this.state.textColor.toString()}</Text>{`
     }
 );`}
     </Text>;
+
+    getSwitchList = () => {
+        return ['shadow', 'animation', 'hideOnPress', 'backgroundColor', 'shadowColor', 'textColor'].map(prop =>
+            <View style={styles.fieldContainer} key={prop}>
+                <Text style={styles.fieldText}>{prop}</Text>
+                <Switch
+                    onValueChange={value => this.setState({[prop]: value})}
+                    value={this.state[prop]}
+                />
+            </View>);
+    };
 
     render() {
         let code = this.getApiCode();
@@ -212,27 +234,7 @@ class ReactNativeRootToast extends Component {
                         keyboardType={'decimal-pad'}
                     />
                 </View>
-                <View style={styles.fieldContainer}>
-                    <Text style={styles.fieldText}>shadow</Text>
-                    <Switch
-                        onValueChange={value => this.setState({shadow: value})}
-                        value={this.state.shadow}
-                    />
-                </View>
-                <View style={styles.fieldContainer}>
-                    <Text style={styles.fieldText}>animation</Text>
-                    <Switch
-                        onValueChange={value => this.setState({animation: value})}
-                        value={this.state.animation}
-                    />
-                </View>
-                <View style={styles.fieldContainer}>
-                    <Text style={styles.fieldText}>hideOnPress</Text>
-                    <Switch
-                        onValueChange={value => this.setState({hideOnPress: value})}
-                        value={this.state.hideOnPress}
-                    />
-                </View>
+                {this.getSwitchList()}
                 <TouchableHighlight
                     style={styles.button}
                     underlayColor="green"
