@@ -24,6 +24,9 @@ visible             | false                    | Bool     | The visibility of to
 position            | Toast.positions.BOTTOM   | Number   | The position of toast showing on screen (A negative number represents the distance from the bottom of screen. A positive number represents the distance form the top of screen. `0` will position the toast to the middle of screen.)
 animation           | true                     | Bool     | Should preform an animation on toast appearing or disappearing.
 shadow              | true                     | Bool     | Should drop shadow around Toast element.
+backgroundColor     | null                     | String   | The background color of the toast.
+shadowColor         | null                     | String   | The shadow color of the toast.
+textColor           | null                     | String   | The text color of the toast.
 delay               | 0                        | Number   | The delay duration before toast start appearing on screen.
 hideOnPress         | true                     | Bool     | Should hide toast that appears by pressing on the toast.
 onShow              | null                     | Function | Callback for toast\`s appear animation start
