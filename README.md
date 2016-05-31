@@ -25,6 +25,7 @@ position            | Toast.positions.BOTTOM   | Number   | The position of toas
 animation           | true                     | Bool     | Should preform an animation on toast appearing or disappearing.
 shadow              | true                     | Bool     | Should drop shadow around Toast element.
 delay               | 0                        | Number   | The delay duration before toast start appearing on screen.
+hideOnPress         | true                     | Bool     | Should hide toast that appears by pressing on the toast.
 onShow              | null                     | Function | Callback for toast\`s appear animation start
 onShown             | null                     | Function | Callback for toast\`s appear animation end
 onHide              | null                     | Function | Callback for toast\`s hide animation start
