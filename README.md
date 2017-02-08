@@ -25,6 +25,9 @@ position            | Toast.positions.BOTTOM   | Number   | The position of toas
 animation           | true                     | Bool     | Should preform an animation on toast appearing or disappearing.
 shadow              | true                     | Bool     | Should drop shadow around Toast element.
 delay               | 0                        | Number   | The delay duration before toast start appearing on screen.
+backgroundColor     | #000                     | String   | The color of the Toast. Defaults to black.
+textColor           | #fff                     | String   | The color of the text. Defaults to white.
+shadowColor         | #000                     | String   | The color of the shadow. Defaults to black.
 onShow              | null                     | Function | Callback for toast\`s appear animation start
 onShown             | null                     | Function | Callback for toast\`s appear animation end
 onHide              | null                     | Function | Callback for toast\`s hide animation start
@@ -36,7 +39,7 @@ onHidden            | null                     | Function | Callback for toast\`
 ##### Toast.durations
 
 presets of duration of the toast.
-
+ 
 1. Toast.durations.SHORT (equals to *2000*)
 
 2. Toast.durations.LONG (equals to *3500*)
