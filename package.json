@@ -3,7 +3,7 @@
   "name": "@housing/react-native-root-toast",
   "description": "react native toast like component, pure javascript solution",
   "scripts": {
-    "build": "babel index.js -o build.js",
+    "build": "webpack",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -11,7 +11,7 @@
     "url": "https://github.com/housinghq/react-native-root-toast"
   },
   "license": "MIT",
-  "main": "./build.js",
+  "main": "./dist/index.js",
   "keywords": [
     "react-component",
     "react-native",
@@ -25,7 +25,8 @@
     "react-native-root-siblings": "^1.0.7"
   },
   "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-preset-react-native-stage-0": "^1.0.1"
+    "babel-loader": "^6.4.0",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "webpack": "^2.2.1"
   }
 }
