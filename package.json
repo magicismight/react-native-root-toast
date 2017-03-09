@@ -11,7 +11,7 @@
     "url": "https://github.com/housinghq/react-native-root-toast"
   },
   "license": "MIT",
-  "main": "./build/index.js",
+  "main": "./build.js",
   "keywords": [
     "react-component",
     "react-native",
