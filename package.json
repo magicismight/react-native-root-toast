@@ -4,7 +4,7 @@
   "description": "react native toast like component, pure javascript solution",
   "repository": {
     "type": "git",
-    "url": "https://github.com/magicismight/react-native-root-toast"
+    "url": "https://github.com/housinghq/react-native-root-toast"
   },
   "license": "MIT",
   "main": "./index.js",
