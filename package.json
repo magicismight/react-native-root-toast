@@ -3,7 +3,7 @@
   "name": "@housing/react-native-root-toast",
   "description": "react native toast like component, pure javascript solution",
   "scripts": {
-    "build": "babel index.js -d build",
+    "build": "babel index.js -o build.js",
     "prepublish": "npm run build"
   },
   "repository": {
