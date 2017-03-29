@@ -10,7 +10,8 @@ module.exports = {
   context: __dirname,
   externals: {
     "react": "react",
-    "react-native": "react-native"
+    "react-native": "react-native",
+    "react-native/Libraries/EventEmitter/EventEmitter": "react-native/Libraries/EventEmitter/EventEmitter"
   },
   module: {
     rules: [

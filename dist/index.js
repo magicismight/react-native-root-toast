@@ -90,7 +90,7 @@ Object.defineProperty(exports,"__esModule",{value:true});exports.Manager=undefin
 var _reactNative=__webpack_require__(1);
 
 
-var _reactNativeRootSiblings=__webpack_require__(5);var _reactNativeRootSiblings2=_interopRequireDefault(_reactNativeRootSiblings);
+var _reactNativeRootSiblings=__webpack_require__(4);var _reactNativeRootSiblings2=_interopRequireDefault(_reactNativeRootSiblings);
 var _ToastContainer=__webpack_require__(3);var _ToastContainer2=_interopRequireDefault(_ToastContainer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
 
 Toast=function(_Component){_inherits(Toast,_Component);function Toast(){var _ref;var _temp,_this,_ret;_classCallCheck(this,Toast);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=Toast.__proto__||Object.getPrototypeOf(Toast)).call.apply(_ref,[this].concat(args))),_this),_this.
@@ -383,10 +383,95 @@ durations=durations;
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports=
+function(modules){
+
+var installedModules={};
+
+
+function __webpack_require__(moduleId){
+
+
+if(installedModules[moduleId])
+return installedModules[moduleId].exports;
+
+
+var module=installedModules[moduleId]={
+i:moduleId,
+l:false,
+exports:{}};
+
+
+
+modules[moduleId].call(module.exports,module,module.exports,__webpack_require__);
+
+
+module.l=true;
+
+
+return module.exports;
+}
+
+
+
+__webpack_require__.m=modules;
+
+
+__webpack_require__.c=installedModules;
+
+
+__webpack_require__.i=function(value){return value;};
+
+
+__webpack_require__.d=function(exports,name,getter){
+if(!__webpack_require__.o(exports,name)){
+Object.defineProperty(exports,name,{
+configurable:false,
+enumerable:true,
+get:getter});
+
+}
+};
+
+
+__webpack_require__.n=function(module){
+var getter=module&&module.__esModule?
+function getDefault(){return module['default'];}:
+function getModuleExports(){return module;};
+__webpack_require__.d(getter,'a',getter);
+return getter;
+};
+
+
+__webpack_require__.o=function(object,property){return Object.prototype.hasOwnProperty.call(object,property);};
+
+
+__webpack_require__.p="";
+
+
+return __webpack_require__(__webpack_require__.s=3);
+}(
+
+[
+
+function(module,exports){
+
+module.exports=__webpack_require__(0);
+
+},
+
+function(module,exports){
+
+module.exports=__webpack_require__(1);
+
+},
+
+function(module,exports,__webpack_require__){
+
 Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _reactNative=__webpack_require__(1);
 var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);
-var _StaticContainer=__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react-native/Libraries/Components/StaticContainer\""); e.code = 'MODULE_NOT_FOUND';; throw e; }()));var _StaticContainer2=_interopRequireDefault(_StaticContainer);
-var _EventEmitter=__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react-native/Libraries/EventEmitter/EventEmitter\""); e.code = 'MODULE_NOT_FOUND';; throw e; }()));var _EventEmitter2=_interopRequireDefault(_EventEmitter);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}
+var _StaticContainer=__webpack_require__(4);var _StaticContainer2=_interopRequireDefault(_StaticContainer);
+var _EventEmitter=__webpack_require__(5);var _EventEmitter2=_interopRequireDefault(_EventEmitter);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}
 
 var styles=_reactNative.StyleSheet.create({
 container:{
@@ -460,13 +545,13 @@ elements));
 
 emitter;
 
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
+},
+
+function(module,exports,__webpack_require__){
 
 Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);
 var _reactNative=__webpack_require__(1);
-var _AppRegistryInjection=__webpack_require__(4);var _AppRegistryInjection2=_interopRequireDefault(_AppRegistryInjection);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}
+var _AppRegistryInjection=__webpack_require__(2);var _AppRegistryInjection2=_interopRequireDefault(_AppRegistryInjection);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}
 
 var styles=_reactNative.StyleSheet.create({
 offStream:{
@@ -476,32 +561,63 @@ position:'absolute'}});
 var uid=0;var _class=function(){
 
 
-function _class(element,callback){_classCallCheck(this,_class);this.
+function _class(element,callback){_classCallCheck(this,_class);
+Object.defineProperty(this,'_id',{
+enumerable:false,
+configurable:false,
+writable:false,
+value:uid++});
 
 
+this.update(element,callback);
 
+this._id=null;
+}_createClass(_class,[{key:'_offStreamElement',value:function _offStreamElement(
 
+element){
+return(0,_react.cloneElement)(element,{
+style:[element.props.style,styles.offStream]});
 
-
-
-
-
-
-
-
-
-
-
-
-_id=null;Object.defineProperty(this,'_id',{enumerable:false,configurable:false,writable:false,value:uid++});this.update(element,callback);}_createClass(_class,[{key:'_offstreamElement',value:function _offstreamElement(element){return(0,_react.cloneElement)(element,{style:[element.props.style,styles.offStream]});}},{key:'update',value:function update(
+}},{key:'update',value:function update(
 
 element,callback){
-_AppRegistryInjection2.default.emit('siblings.update',this._id,this._offstreamElement(element),callback);
+_AppRegistryInjection2.default.emit('siblings.update',this._id,this._offStreamElement(element),callback);
 }},{key:'destroy',value:function destroy(
 
 callback){
 _AppRegistryInjection2.default.emit('siblings.update',this._id,null,callback);
 }}]);return _class;}();exports.default=_class;
+
+},
+
+function(module,exports,__webpack_require__){
+
+Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+StaticContainer=function(_Component){_inherits(StaticContainer,_Component);function StaticContainer(){_classCallCheck(this,StaticContainer);return _possibleConstructorReturn(this,(StaticContainer.__proto__||Object.getPrototypeOf(StaticContainer)).apply(this,arguments));}_createClass(StaticContainer,[{key:'shouldComponentUpdate',value:function shouldComponentUpdate(
+nextProps){
+return!!nextProps.shouldUpdate;
+}},{key:'render',value:function render()
+{
+var child=this.props.children;
+return child===null||child===false?
+null:
+_react2.default.Children.only(child);
+}}]);return StaticContainer;}(_react.Component);exports.default=StaticContainer;
+
+},
+
+function(module,exports){
+
+module.exports=__webpack_require__(5);
+
+}]);
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-native/Libraries/EventEmitter/EventEmitter");
 
 /***/ }),
 /* 6 */
