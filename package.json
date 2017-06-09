@@ -1,5 +1,5 @@
 {
-  "version": "1.1.5",
+  "version": "1.1.6",
   "name": "@housing/react-native-root-toast",
   "description": "react native toast like component, pure javascript solution",
   "scripts": {
