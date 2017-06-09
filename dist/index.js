@@ -7,9 +7,9 @@ module.exports =
 /******/ 	function __webpack_require__(moduleId) {
 /******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
+/******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
-/******/
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
@@ -64,7 +64,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -83,15 +83,15 @@ module.exports = require("react-native");
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:true});exports.Manager=undefined;var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);
+Object.defineProperty(exports,"__esModule",{value:true});exports.Manager=undefined;var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='/Users/sid/Dev/rn/react-native-root-toast/lib/Toast.js';var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);
 
 
 
 var _reactNative=__webpack_require__(1);
 
 
-var _reactNativeRootSiblings=__webpack_require__(4);var _reactNativeRootSiblings2=_interopRequireDefault(_reactNativeRootSiblings);
-var _ToastContainer=__webpack_require__(3);var _ToastContainer2=_interopRequireDefault(_ToastContainer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+var _reactNativeRootSiblings=__webpack_require__(5);var _reactNativeRootSiblings2=_interopRequireDefault(_reactNativeRootSiblings);
+var _ToastContainer=__webpack_require__(4);var _ToastContainer2=_interopRequireDefault(_ToastContainer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
 
 Toast=function(_Component){_inherits(Toast,_Component);function Toast(){var _ref;var _temp,_this,_ret;_classCallCheck(this,Toast);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=Toast.__proto__||Object.getPrototypeOf(Toast)).call.apply(_ref,[this].concat(args))),_this),_this.
 
@@ -121,14 +121,14 @@ _toast=null,_this.
 componentWillMount=function(){
 _this._toast=new _reactNativeRootSiblings2.default(_react2.default.createElement(_ToastContainer2.default,_extends({},
 _this.props,{
-duration:0})));
+duration:0,__source:{fileName:_jsxFileName,lineNumber:37}})));
 
 },_this.
 
 componentWillReceiveProps=function(nextProps){
 _this._toast.update(_react2.default.createElement(_ToastContainer2.default,_extends({},
 nextProps,{
-duration:0})));
+duration:0,__source:{fileName:_jsxFileName,lineNumber:44}})));
 
 },_this.
 
@@ -138,7 +138,7 @@ _this._toast.destroy();
 
 {
 return null;
-}}]);return Toast;}(_react.Component);Toast.displayName='Toast';Toast.propTypes=_ToastContainer2.default.propTypes;Toast.positions=_ToastContainer.positions;Toast.durations=_ToastContainer.durations;Toast.show=function(message){var options=arguments.length>1&&arguments[1]!==undefined?arguments[1]:{position:_ToastContainer.positions.BOTTOM,duration:_ToastContainer.durations.SHORT};return new _reactNativeRootSiblings2.default(_react2.default.createElement(_ToastContainer2.default,_extends({},options,{visible:true}),message));};Toast.hide=function(toast){if(toast instanceof _reactNativeRootSiblings2.default){toast.destroy();}else{console.warn('Toast.hide expected a `RootSiblings` instance as argument.\nBut got `'+typeof toast+'` instead.');}};exports.
+}}]);return Toast;}(_react.Component);Toast.displayName='Toast';Toast.propTypes=_ToastContainer2.default.propTypes;Toast.positions=_ToastContainer.positions;Toast.durations=_ToastContainer.durations;Toast.show=function(message){var options=arguments.length>1&&arguments[1]!==undefined?arguments[1]:{position:_ToastContainer.positions.BOTTOM,duration:_ToastContainer.durations.SHORT};return new _reactNativeRootSiblings2.default(_react2.default.createElement(_ToastContainer2.default,_extends({},options,{visible:true,__source:{fileName:_jsxFileName,lineNumber:18}}),message));};Toast.hide=function(toast){if(toast instanceof _reactNativeRootSiblings2.default){toast.destroy();}else{console.warn('Toast.hide expected a `RootSiblings` instance as argument.\nBut got `'+typeof toast+'` instead.');}};exports.
 
 
 
@@ -150,7 +150,14 @@ Toast;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:true});exports.durations=exports.positions=undefined;var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);
+Object.defineProperty(exports,"__esModule",{value:true});var _Toast=__webpack_require__(2);
+Object.keys(_Toast).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _Toast[key];}});});var _Toast2=_interopRequireDefault(_Toast);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_Toast2.default;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});exports.durations=exports.positions=undefined;var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='/Users/sid/Dev/rn/react-native-root-toast/lib/ToastContainer.js';var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);
 
 
 
@@ -241,6 +248,7 @@ ToastContainer=function(_Component){_inherits(ToastContainer,_Component);
 
 
 
+
 function ToastContainer(){_classCallCheck(this,ToastContainer);var _this=_possibleConstructorReturn(this,(ToastContainer.__proto__||Object.getPrototypeOf(ToastContainer)).apply(this,
 arguments));_this.
 
@@ -268,6 +276,10 @@ _this._hide();
 _this.setState({
 visible:nextProps.visible});
 
+}else if(nextProps.hash!==_this.props.hash){
+clearTimeout(_this._showTimeout);
+clearTimeout(_this._hideTimeout);
+_this._showTimeout=setTimeout(function(){return _this._show();},_this.props.delay);
 }
 };_this.
 
@@ -344,10 +356,10 @@ style:[
 styles.defaultStyle,
 position],
 
-pointerEvents:'box-none'},
+pointerEvents:'box-none',__source:{fileName:_jsxFileName,lineNumber:195}},
 
 _react2.default.createElement(_reactNative.TouchableWithoutFeedback,{
-onPress:this.props.hideOnPress?this._hide:null},
+onPress:this.props.hideOnPress?this._hide:null,__source:{fileName:_jsxFileName,lineNumber:202}},
 
 _react2.default.createElement(_reactNative.Animated.View,{
 style:[
@@ -360,18 +372,18 @@ props.shadow&&styles.shadowStyle,
 props.shadowColor&&{shadowColor:props.shadowColor}],
 
 pointerEvents:'none',
-ref:function ref(ele){return _this2._root=ele;}},
+ref:function ref(ele){return _this2._root=ele;},__source:{fileName:_jsxFileName,lineNumber:205}},
 
 _react2.default.createElement(_reactNative.Text,{style:[
 styles.textStyle,
-props.textColor&&{color:props.textColor}]},
+props.textColor&&{color:props.textColor}],__source:{fileName:_jsxFileName,lineNumber:218}},
 
 this.props.children)))):
 
 
 
 null;
-}}]);return ToastContainer;}(_react.Component);ToastContainer.displayName='ToastContainer';ToastContainer.propTypes=_extends({},_reactNative.View.propTypes,{duration:_react.PropTypes.number,visible:_react.PropTypes.bool,position:_react.PropTypes.number,animation:_react.PropTypes.bool,shadow:_react.PropTypes.bool,backgroundColor:_react.PropTypes.string,shadowColor:_react.PropTypes.string,textColor:_react.PropTypes.string,delay:_react.PropTypes.number,hideOnPress:_react.PropTypes.bool,onHide:_react.PropTypes.func,onHidden:_react.PropTypes.func,onShow:_react.PropTypes.func,onShown:_react.PropTypes.func});ToastContainer.defaultProps={visible:false,duration:durations.SHORT,animation:true,shadow:true,position:positions.BOTTOM,delay:0,hideOnPress:true};exports.default=
+}}]);return ToastContainer;}(_react.Component);ToastContainer.displayName='ToastContainer';ToastContainer.propTypes=_extends({},_reactNative.View.propTypes,{duration:_react.PropTypes.number,visible:_react.PropTypes.bool,position:_react.PropTypes.number,animation:_react.PropTypes.bool,shadow:_react.PropTypes.bool,backgroundColor:_react.PropTypes.string,shadowColor:_react.PropTypes.string,textColor:_react.PropTypes.string,delay:_react.PropTypes.number,hideOnPress:_react.PropTypes.bool,onHide:_react.PropTypes.func,onHidden:_react.PropTypes.func,onShow:_react.PropTypes.func,onShown:_react.PropTypes.func,hash:_react.PropTypes.string});ToastContainer.defaultProps={visible:false,duration:durations.SHORT,animation:true,shadow:true,position:positions.BOTTOM,delay:0,hideOnPress:true};exports.default=
 
 
 ToastContainer;exports.
@@ -380,7 +392,7 @@ positions=positions;exports.
 durations=durations;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports=
@@ -609,22 +621,15 @@ _react2.default.Children.only(child);
 
 function(module,exports){
 
-module.exports=__webpack_require__(5);
+module.exports=__webpack_require__(6);
 
 }]);
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-native/Libraries/EventEmitter/EventEmitter");
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-Object.defineProperty(exports,"__esModule",{value:true});var _Toast=__webpack_require__(2);
-Object.keys(_Toast).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _Toast[key];}});});var _Toast2=_interopRequireDefault(_Toast);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_Toast2.default;
 
 /***/ })
 /******/ ]);
