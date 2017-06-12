@@ -18,6 +18,6 @@
     "focus"
   ],
   "dependencies": {
-    "@housing/react-native-root-siblings": "^1.1.5"
+    "@housing/react-native-root-siblings": "1.1.6"
   }
 }
