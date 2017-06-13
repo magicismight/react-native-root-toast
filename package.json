@@ -1,23 +1,23 @@
 {
-    "version": "1.1.2",
-    "name": "react-native-root-toast",
-    "description": "react native toast like component, pure javascript solution",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/magicismight/react-native-root-toast"
-    },
-    "license": "MIT",
-    "main": "./index.js",
-    "keywords": [
-        "react-component",
-        "react-native",
-        "ios",
-        "android",
-        "image",
-        "video",
-        "focus"
-    ],
-    "dependencies": {
-        "react-native-root-siblings": "^1.2.1"
-    }
+  "version": "2.0.0",
+  "name": "@housing/react-native-root-toast",
+  "description": "react native toast like component, pure javascript solution",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/housinghq/react-native-root-toast"
+  },
+  "license": "MIT",
+  "main": "./index.js",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "image",
+    "video",
+    "focus"
+  ],
+  "dependencies": {
+    "@housing/react-native-root-siblings": "1.1.6"
+  }
 }
