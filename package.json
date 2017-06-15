@@ -19,5 +19,8 @@
     ],
     "dependencies": {
         "react-native-root-siblings": "^1.2.1"
+    },
+    "peerDependencies": {
+        "prop-types": "^15.5.10"
     }
 }
