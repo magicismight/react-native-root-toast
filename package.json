@@ -18,7 +18,7 @@
         "focus"
     ],
     "dependencies": {
-        "react-native-root-siblings": "^1.2.1",
+        "react-native-root-siblings": "https://github.com/zeppelin-no/react-native-root-siblings.git",
         "prop-types": "^15.5.10"
     }
 }
