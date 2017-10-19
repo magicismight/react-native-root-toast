@@ -24,6 +24,14 @@ let {
     positions
 } = Toast;
 
+const ToastReactComponent = () => {
+    return (
+        <View>
+            <Text>hi, I am a react component element. </Text>
+        </View>
+    );
+};
+
 const DURATIONS_KEYS = Object.keys(durations);
 const POSITIONS_KEYS = Object.keys(positions);
 const messages = [
@@ -48,7 +56,8 @@ const messages = [
     'Give her hell from us, Peeves!',
     'Until the very end.',
     'Oculus Reparo!',
-    '“After all this time?”“Always,” said Snape.'
+    '“After all this time?”“Always,” said Snape.',
+    <ToastReactComponent />
 ];
 const colors = {
     default: null,
