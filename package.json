@@ -1,5 +1,5 @@
 {
-    "version": "3.0.0",
+    "version": "3.0.1",
     "name": "react-native-root-toast",
     "description": "react native toast like component, pure javascript solution",
     "repository": {
