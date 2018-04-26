@@ -8,7 +8,7 @@
     },
     "license": "MIT",
     "main": "./index.js",
-    "types":"./index.d.ts"
+    "types":"./index.d.ts",
     "keywords": [
         "react-component",
         "react-native",
