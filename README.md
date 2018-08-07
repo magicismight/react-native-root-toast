@@ -2,6 +2,10 @@
 
 -----------------------
 
+ # NOTICE:
+    
+    - react-native-root-toast >= 2.1.0 only supports react-native >= 0.47.0 , for react-native < 0.47.0 you can choose 2.0.0 or below.
+
 #### Features
 1. Pure javascript solution.
 2. Support both Android and iOS.
