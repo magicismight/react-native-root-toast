@@ -44,6 +44,6 @@ declare module "react-native-root-toast"{
         static durations:Durations;
         static positions:Positions;
     }
+
+    export class ToastContainer extends React.Component<ToastProps> {}
 }
-
-
