@@ -1,4 +1,4 @@
-### react-native-root-toast
+## react-native-root-toast [![npm version](https://badge.fury.io/js/react-native-root-toast.svg)](http://badge.fury.io/js/react-native-root-toast)
 
 -----------------------
 
