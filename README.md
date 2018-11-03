@@ -33,6 +33,7 @@ shadowColor         | null                     | String   | The shadow color of 
 textColor           | null                     | String   | The text color of the toast.
 delay               | 0                        | Number   | The delay duration before toast start appearing on screen.
 hideOnPress         | true                     | Bool     | Should hide toast that appears by pressing on the toast.
+opacity             | 0.8                      | Number   | The Toast opacity.
 onShow              | null                     | Function | Callback for toast\`s appear animation start
 onShown             | null                     | Function | Callback for toast\`s appear animation end
 onHide              | null                     | Function | Callback for toast\`s hide animation start
