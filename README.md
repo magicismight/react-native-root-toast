@@ -1,6 +1,10 @@
-### react-native-root-toast
+## react-native-root-toast [![npm version](https://badge.fury.io/js/react-native-root-toast.svg)](http://badge.fury.io/js/react-native-root-toast)
 
 -----------------------
+
+ # NOTICE:
+    
+    - react-native-root-toast >= 2.1.0 only supports react-native >= 0.47.0 , for react-native < 0.47.0 you can choose 2.0.0 or below.
 
 #### Features
 1. Pure javascript solution.
@@ -29,6 +33,7 @@ shadowColor         | null                     | String   | The shadow color of 
 textColor           | null                     | String   | The text color of the toast.
 delay               | 0                        | Number   | The delay duration before toast start appearing on screen.
 hideOnPress         | true                     | Bool     | Should hide toast that appears by pressing on the toast.
+opacity             | 0.8                      | Number   | The Toast opacity.
 onShow              | null                     | Function | Callback for toast\`s appear animation start
 onShown             | null                     | Function | Callback for toast\`s appear animation end
 onHide              | null                     | Function | Callback for toast\`s hide animation start

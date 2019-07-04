@@ -1,5 +1,5 @@
 {
-    "version": "1.3.0",
+    "version": "3.1.1",
     "name": "react-native-root-toast",
     "description": "react native toast like component, pure javascript solution",
     "repository": {
@@ -8,6 +8,7 @@
     },
     "license": "MIT",
     "main": "./index.js",
+    "types": "./index.d.ts",
     "keywords": [
         "react-component",
         "react-native",
@@ -18,7 +19,10 @@
         "focus"
     ],
     "dependencies": {
-        "react-native-root-siblings": "^1.2.1",
+        "react-native-root-siblings": "^3.0.0",
         "prop-types": "^15.5.10"
+    },
+    "peerDependencies": {
+        "react-native": ">=0.47.0"
     }
 }

@@ -168,6 +168,9 @@ class ReactNativeRootToast extends Component {
             backgroundColor: this.state.backgroundColor ? 'blue' : null,
             shadowColor: this.state.shadowColor ? 'yellow' : null,
             textColor: this.state.textColor ? 'purple' : null,
+            onPress: () => {
+              alert('You clicked me!')
+            },
             onHidden: () => {
                 this.toast.destroy();
                 this.toast = null;
