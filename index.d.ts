@@ -25,7 +25,8 @@ declare module "react-native-root-toast"{
         onHidden?: Function,
         onShow?: Function,
         onShown?: Function,
-        onPress?: Function
+        onPress?: Function,
+        mask?: boolean,
     }
 
     export interface ToastProps extends ToastOptions,ReactNative.ViewProperties{
