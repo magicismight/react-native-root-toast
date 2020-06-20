@@ -16,7 +16,7 @@
 
 > react-native-root-toast >= 2.1.0 only supports react-native >= 0.47.0 , for lower version choose 2.0.0 or below.
 
-In react native >= 0.62, the new LogBox component would impact this component's initialization. To make it work we have to explicitly insert a mount point for your app like this:
+In react native >= 0.62, the new LogBox component would impact this component's initialization. To make it work we have to explicitly insert a mount point in your app like this:
 
 ```
 // in your entry file like `App.js`
@@ -34,7 +34,7 @@ return (
             
 ```
 
-You can skip this step if your react-native is lower than 0.62. And actually you can inject RootSiblingParent anywhere like a react portal, for example if you have multiple rootviews you can choose where to display the root toast.
+You can skip this step if your react-native is lower than 0.62. And actually you can inject RootSiblingParent into anywhere like a react portal, for example if you have multiple rootviews you can choose where to display the root toast.
 
 Read more about [`react-native-root-siblings`](https://github.com/magicismight/react-native-root-siblings) which powers `react-native-root-toast`. 
 
