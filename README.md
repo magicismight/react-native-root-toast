@@ -18,7 +18,7 @@
 
 In react native >= 0.62, the new LogBox component would impact this component's initialization. To make it work we have to explicitly insert a mount point in your app like this:
 
-```
+```javascript
 // in your entry file like `App.js`
 
 // In theory you don't have to install `react-native-root-siblings` because it's a dep of root-toast
@@ -45,7 +45,7 @@ There are two different ways to manage a Toast.
 
 ##### **Calling api**
 
-```
+```javascript
 import Toast from 'react-native-root-toast';
 
 
@@ -83,7 +83,7 @@ setTimeout(function () {
 **NOTE:**
 Showing a toast by using a Component inside render, The toast will be automatically disappeared when the `<Toast />` is unmounted.
 
-```
+```javascript
 import React, {Component} from 'react-native';
 import Toast from 'react-native-root-toast';
 
