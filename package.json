@@ -19,6 +19,7 @@
         "focus"
     ],
     "dependencies": {
+        "deprecated-react-native-prop-types": "^2.3.0",
         "prop-types": "^15.5.10",
         "react-native-root-siblings": "^4.0.0"
     },
