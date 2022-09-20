@@ -4,7 +4,7 @@
     "description": "Based on react-native-root-toast library: react native toast like component, pure javascript solution. Added option to pass any children + fix onpress issue",
     "repository": {
         "type": "git",
-        "url": "https://github.com/magicismight/react-native-root-toast"
+        "url": "https://github.com/groger/react-native-root-toast"
     },
     "license": "MIT",
     "main": "./index.js",
