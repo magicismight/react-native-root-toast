@@ -25,11 +25,14 @@ declare module "react-native-root-toast"{
         onHidden?: Function,
         onShow?: Function,
         onShown?: Function,
-        onPress?: Function
+        onPress?: Function,
+        padding?: number,
+        paddingVertical?: number,
+        paddingHorizontal?: number,
+        borderRadius?: number
     }
 
-    export interface ToastProps extends ToastOptions,ReactNative.ViewProperties{
-    }
+    export interface ToastProps extends ToastOptions{}
 
     export interface Durations {
         LONG:number,
