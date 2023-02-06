@@ -57,6 +57,8 @@ let toast = Toast.show('This is a message', {
     animation: true,
     hideOnPress: true,
     delay: 0,
+    padding: 10,
+    borderRadius: 5,
     onShow: () => {
         // calls on toast\`s appear animation start
     },
@@ -112,6 +114,9 @@ class Example extends Component{
             shadow={false}
             animation={false}
             hideOnPress={true}
+            paddingVertical={16}
+            paddingHorizontal={32}
+            borderRadius={50}
         >This is a message</Toast>;
     }
 }
@@ -141,6 +146,10 @@ onShow              | null                     | Function | Callback for toast\`
 onShown             | null                     | Function | Callback for toast\`s appear animation end
 onHide              | null                     | Function | Callback for toast\`s hide animation start
 onHidden            | null                     | Function | Callback for toast\`s hide animation end
+padding             | null                     | Number   | Padding of the toast
+paddingVertical     | null                     | Number   | Vertical padding of the toast
+paddingHorizontal   | null                     | Number   | Horizontal padding of the toast
+borderRadius        | null                     | Number   | Border radius of the toast
 
 ### Constants
 
