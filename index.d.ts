@@ -45,7 +45,7 @@ declare module "react-native-root-toast"{
         CENTER:number,
     }
     export default class Toast extends React.Component<ToastProps>{
-        static show:(message:string,options?:ToastOptions)=>any;
+        static show:(message:React.ReactNode,options?:ToastOptions)=>any;
         static hide:(toast:any)=>void;
         static durations:Durations;
         static positions:Positions;
