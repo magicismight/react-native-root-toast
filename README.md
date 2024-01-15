@@ -134,6 +134,8 @@ shadow              | true                     | Bool     | Should drop shadow a
 backgroundColor     | null                     | String   | The background color of the toast.
 shadowColor         | null                     | String   | The shadow color of the toast.
 textColor           | null                     | String   | The text color of the toast.
+containerStyle      | null                     | object   | Style object whose properties will override the default container styles.
+textStyle           | null                     | object   | Style object whose properties will override the default text styles.
 delay               | 0                        | Number   | The delay duration before toast start appearing on screen.
 hideOnPress         | true                     | Bool     | Should hide toast that appears by pressing on the toast.
 opacity             | 0.8                      | Number   | The Toast opacity.
