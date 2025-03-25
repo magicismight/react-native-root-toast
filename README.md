@@ -88,11 +88,8 @@ import React, {Component} from 'react-native';
 import Toast from 'react-native-root-toast';
 
 class Example extends Component{
-    constructor() {
-        super(...arguments);
-        this.state = {
-            visible: false
-        };
+    state = {
+        visible: false
     }
 
     componentDidMount() {

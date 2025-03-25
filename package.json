@@ -1,29 +1,38 @@
 {
-    "version": "3.6.0",
-    "name": "react-native-root-toast",
-    "description": "react native toast like component, pure javascript solution",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/magicismight/react-native-root-toast"
-    },
-    "license": "MIT",
-    "main": "./index.js",
-    "types": "./index.d.ts",
-    "keywords": [
-        "react-component",
-        "react-native",
-        "ios",
-        "android",
-        "image",
-        "video",
-        "focus"
-    ],
-    "dependencies": {
-        "deprecated-react-native-prop-types": "^2.3.0",
-        "prop-types": "^15.5.10",
-        "react-native-root-siblings": "^4.0.0"
-    },
-    "peerDependencies": {
-        "react-native": ">=0.47.0"
-    }
+  "version": "4.0.0",
+  "name": "react-native-root-toast",
+  "description": "react native toast like component, pure javascript solution",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magicismight/react-native-root-toast"
+  },
+  "license": "MIT",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "files": [
+    "lib",
+    "index.js",
+    "index.d.ts"
+  ],
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "image",
+    "video",
+    "focus"
+  ],
+  "dependencies": {
+    "react-native-root-siblings": "^5.0.0"
+  },
+  "devDependencies": {
+    "react": "19.0.0",
+    "react-native": "0.78.1",
+    "react-native-safe-area-context": "^5.3.0"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.47.0",
+    "react-native-safe-area-context": "*"
+  }
 }
