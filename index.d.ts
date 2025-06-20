@@ -45,6 +45,7 @@ declare module 'react-native-root-toast' {
   }
   export default class Toast extends React.Component<ToastProps> {
     static show: (message: React.ReactNode, options?: ToastOptions) => any;
+    static showWithComp: (children: React.Component, options?: ToastOptions) => any;
     static hide: (toast: any) => void;
     static durations: Durations;
     static positions: Positions;
